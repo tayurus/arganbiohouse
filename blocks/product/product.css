@@ -1,0 +1,25 @@
+.product{
+    width: 266px;
+    border: 2px solid #e8e8e8;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__visual{
+    width: 265px;
+    height: 265px;
+
+}
+
+.product__visual_sale{
+    background: url(img/product_sale-label.png) top left;
+}
+
+.product__photo{
+    width: 100%;
+    height: 100%;
+}
+
+.product__name{
+
+}
