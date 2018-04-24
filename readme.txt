@@ -1,4 +1,4 @@
-This template by contains:
+This template contains:
 	gulp
 	bootstrap 4
 	jquery 3.3
