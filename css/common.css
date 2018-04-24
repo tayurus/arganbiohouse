@@ -1,8 +1,101 @@
-*{
+@font-face {
+    src: url("fonts/centurygothic.ttf");
+    font-family: "Century Gothic";
+}
+
+*, ::after, ::before{
     box-sizing: border-box;
+    font-family: "Century Gothic";
 }
 
 body{
     margin: 0px;
     padding: 0px;
+    background: url("img/gb-flower.png");
+}
+
+[class$="icon"]{
+    cursor: pointer;
+}
+
+a{
+    color: #646464;
+}
+
+.location-icon{
+    position: relative;
+    padding-left: 26px;
+}
+ .telephone-icon{
+    position: relative;
+}
+.mail-icon{
+    position: relative;
+}
+
+.location-icon::before{
+    width: 12px;
+    height: 16px;
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 0%;
+    background: url("img/location.png") no-repeat center / contain;
+}
+
+.telephone-icon::before{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: -35px;
+    background: url("img/telephone.png") no-repeat center / contain;
+}
+
+.mail-icon::before{
+    width: 18px;
+    height: 12px;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: -3px;
+    background: url("img/mail.png") no-repeat center / contain;
+}
+
+.search-icon{
+    width: 23px;
+    height: 23px;
+    background: url("img/search.png") no-repeat center / contain;
+    position: relative;
+}
+
+.search-icon form{
+    display: none;
+}
+
+.basket-icon{
+    width: 25px;
+    height: 27px;
+    background: url("img/basket.png") no-repeat center / contain;
+    position: relative;
+}
+
+.basket-icon:hover{
+    background: url("img/basket-active.png") no-repeat center / contain;
+}
+
+.basket-counter{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c0c030;
+    color: #c0c030;
+    font-size: 12px;
+    border-radius: 100%;
+    top: 0%;
+    right: -17px;
 }

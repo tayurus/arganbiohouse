@@ -7,14 +7,14 @@ let cleanCSS = require('gulp-clean-css');
 
 // SOURCES
 let src = {
-    css: ["**/*.css", "!node_modules/**/*.css"],
-    js: ["**/*.js", "!node_modules/**/*.js", "!gulpFile.js"],
+    css: ["**/*.css", "!node_modules/**/*.css", "!build/**/*.css"],
+    js: ["**/*.js", "!node_modules/**/*.js", "!gulpFile.js", "!build/**/*.js"],
     pages: ["pages/**/*.jade"],
-    img: ["**/*.png", "**/*.jpg", "**/*.svg", "**/*.ico"],
+    img: ["**/*.png", "**/*.jpg", "**/*.svg", "**/*.ico", "!build"],
 }
 
 let dist = {
-    main: "build/",
+    main: "build",
     img: "build/img"
 }
 
