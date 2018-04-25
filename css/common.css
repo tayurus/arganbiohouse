@@ -3,16 +3,24 @@
     font-family: "Century Gothic";
 }
 
-*, ::after, ::before{
-    box-sizing: border-box;
-    font-family: "Century Gothic";
-}
-
 body{
     margin: 0px;
     padding: 0px;
     background: url("img/gb-flower.png");
+    box-sizing: border-box;
+    font-family: "Century Gothic";
 }
+
+.modal-wrapper{
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+}
+
 
 [class$="icon"]{
     cursor: pointer;
@@ -72,6 +80,30 @@ a{
 
 .search-icon form{
     display: none;
+    position: absolute;
+    left: -621px;
+    top: 27px;
+    z-index: 3;
+}
+
+.search-icon input{
+    width: 628px;
+    padding: 15px 40px 15px 15px;
+    border: 1px solid #c3c2c2;
+    background-color: #ffffff;
+    color: #000;
+    font-size: 20px;
+    border: 1px solid #c3c2c2;
+}
+
+.search-clear{
+    width: 18px;
+    height: 18px;
+    background: url("img/search-clear.png") no-repeat center / cover;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3%;
+    position: absolute;
 }
 
 .basket-icon{
@@ -98,4 +130,14 @@ a{
     border-radius: 100%;
     top: 0%;
     right: -17px;
+}
+
+@media (max-width:1100px),(max-device-width:1100px) {
+    .search-icon form{
+        left: -214px;
+    }
+
+    .search-icon input{
+        width: inherit;
+    }
 }
