@@ -14,7 +14,7 @@ body{
 .modal-wrapper{
     display: none;
     position: absolute;
-    width: 100vw;
+    width: 96vw;
     height: 100vh;
     top: 0%;
     left: 0%;
