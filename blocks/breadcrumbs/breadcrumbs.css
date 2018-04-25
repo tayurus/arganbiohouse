@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .breadcrumbs li:not(:first-child){
