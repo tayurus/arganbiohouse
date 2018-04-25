@@ -34,6 +34,7 @@
 .product__label:hover{
     color: transparent;
     background: rgba(0,0,0,0.5) url(img/product__zoom.png) no-repeat center;
+    cursor: pointer;
 }
 
 .product__photo{
