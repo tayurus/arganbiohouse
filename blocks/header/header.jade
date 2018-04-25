@@ -15,8 +15,9 @@ header.header
                 .header__icons
                     .search-icon
                         form
-                            input.header__search(type="search", name="search", placeholder="Найти...")
+                            input.header__search(type="search", name="search", placeholder="Найти...", required)
                             .search-clear
+                            input.search-icon-submit(type="submit",value="")
                     .basket-icon
                         .basket-counter 3
                         

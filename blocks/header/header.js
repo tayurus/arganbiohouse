@@ -9,7 +9,7 @@ $(document).ready(function functionName() {
         event.stopPropagation();
         $(".search-icon input").val("");
         $(".search-icon form").toggle();
-        // $(".modal-wrapper").hide();
+        $(".modal-wrapper").hide();
     });
 
     $(".search-icon input").click(function(event) {
@@ -19,6 +19,6 @@ $(document).ready(function functionName() {
     $(".modal-wrapper").click(function() {
         $(".search-icon form").hide();
         $(".modal-wrapper").hide();
-    })
+    });
 
 });

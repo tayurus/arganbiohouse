@@ -125,7 +125,7 @@ a{
     z-index: 3;
 }
 
-.search-icon input{
+.search-icon input[type="search"]{
     width: 628px;
     padding: 15px 40px 15px 15px;
     border: 1px solid #c3c2c2;
@@ -135,14 +135,26 @@ a{
     border: 1px solid #c3c2c2;
 }
 
-.search-clear{
-    width: 18px;
-    height: 18px;
-    background: url("img/search-clear.png") no-repeat center / cover;
+.search-icon-submit{
+    width: 23px;
+    height: 23px;
     top: 50%;
+    border: none;
+    background: url("img/search.png") no-repeat center / contain;
     transform: translateY(-50%);
     right: 3%;
     position: absolute;
+    cursor: pointer;
+}
+
+.search-clear{
+    top: 50%;
+    right: 8%;
+    position: absolute;
+    transform: translateY(-50%);
+    background: url("img/search-clear.png") no-repeat center / cover;
+    width: 18px;
+    height: 18px;
 }
 
 .basket-icon{
@@ -176,7 +188,11 @@ a{
         left: -214px;
     }
 
-    .search-icon input{
+    .search-clear{
+        right: 13%;
+    }
+
+    .search-icon input[type="search"]{
         width: inherit;
     }
 }
