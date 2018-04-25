@@ -61,6 +61,45 @@ a{
     background: url("img/telephone.png") no-repeat center / contain;
 }
 
+.vk-icon{
+    width: 31px;
+    height: 30px;
+    background: url("img/vk.png") no-repeat center / contain;
+}
+.fb-icon{
+    width: 31px;
+    height: 30px;
+    background: url("img/fb.png") no-repeat center / contain;
+}
+.ok-icon{
+    width: 31px;
+    height: 30px;
+    background: url("img/ok.png") no-repeat center / contain;
+}
+.tw-icon{
+    width: 31px;
+    height: 30px;
+    background: url("img/tw.png") no-repeat center / contain;
+}
+
+.develop-icon{
+    display: block;
+    width: 110px;
+    height: 20px;
+    background: url("img/web-comp.png") no-repeat center / contain;
+}
+
+@media (max-width:400px),(max-device-width:400px) {
+    .telephone-icon::before{
+        top: 1px;
+        left: -22px;
+    }
+
+    .location-icon::before{
+        left: 8px;
+    }
+}
+
 .mail-icon::before{
     width: 18px;
     height: 12px;
