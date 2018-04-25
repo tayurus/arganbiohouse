@@ -1,0 +1,43 @@
+.filter{
+    width: 254px;
+    background: #ffffff;
+    padding: 20px;
+}
+
+.filter__body{
+    padding: 0;
+    list-style: none;
+}
+
+.filter__name{
+    position: relative;
+    color: #646464;
+    font-size: 16px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.filter__name_root{
+    padding-left: 14px;
+}
+
+.filter__name_subcategory{
+    color: #646464;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.filter__name_active{
+    font-weight: bold;
+}
+
+.filter__arrow{
+    position: absolute;
+    top: 4px;
+    left: -7px;
+    width: 14px;
+    height: 14px;
+    background: url(img/filter__arrow.png) no-repeat center;
+    transition: 0.3s;
+    /* transform: rotate(-90deg); */
+}

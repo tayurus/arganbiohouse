@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    include ../blocks/head/head.jade
+    body.text-center.text-md-left
+        include ../blocks/header/header.jade
+            
+        main
+        
+            ul.container.breadcrumbs.px-4.px-xl-0.my-4
+                li
+                    a.breadcrumbs__item(href="#") Главная
+                li
+                    a.breadcrumbs__item(href="#") Косметика
+                li
+                    a.breadcrumbs__item(href="#") Косметика DermArgan
+                li
+                    a.breadcrumbs__item.breadcrumbs__item_active(href="#") Premium Class Аргановое масло
+            
+            include ../blocks/filter/filter.jade
+            
+        
+        include ../blocks/footer/footer.jade
