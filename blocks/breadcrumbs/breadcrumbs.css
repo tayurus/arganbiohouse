@@ -1,0 +1,27 @@
+.breadcrumbs{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.breadcrumbs li:not(:first-child){
+    padding-left: 20px;
+}
+
+.breadcrumbs .breadcrumbs__item:not(.breadcrumbs__item_active){
+    text-decoration: underline;
+    color: #abaaaa;
+    font-weight: 400;
+    position: relative;
+}
+
+.breadcrumbs .breadcrumbs__item:not(.breadcrumbs__item_active)::after{
+    position: absolute;
+    content: ">";
+    right: -15px;
+    top: 0px;
+}
+
+.breadcrumbs__item_active{
+    font-weight: 700;
+}
