@@ -1,0 +1,14 @@
+.news{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 360px;
+    height: 182px;
+}
+
+.news__img{
+    width: 167px;
+    height: 182px;
+    background: url(img/news__img.png) no-repeat center / cover;
+    border-top: 3px solid #c0c030;
+}
