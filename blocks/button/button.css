@@ -4,5 +4,21 @@
     text-align: center;
     display: block;
     margin: 0px auto;
-    width: max-content;
+    cursor: pointer;
+}
+
+.button_buy{
+    width: 123px;
+    height: 25px;
+    padding: 0;
+    border: 1px solid #c0c030;
+    border-left-width: 27px;
+    background-color: #ffffff;
+    color: #c0c030;
+    font-size: 14px;
+}
+
+.button_buy:hover{
+    background-color: #c0c030;
+    color: #ffffff;
 }

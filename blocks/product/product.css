@@ -1,25 +1,118 @@
 .product{
     width: 266px;
+    padding-bottom: 16px;
+    margin: 10px auto;
     border: 2px solid #e8e8e8;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .product__visual{
-    width: 265px;
-    height: 265px;
-
+    width: 262px;
+    height: 262px;
+    position: relative;
 }
 
-.product__visual_sale{
-    background: url(img/product_sale-label.png) top left;
+.product__label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: -1px 0;
+    color: #ca0202;
+    text-align: left;
+    padding-left: 2px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-image: url(img/product__label.png);
+}
+
+.product__label:hover{
+    color: transparent;
+    background: rgba(0,0,0,0.5) url(img/product__zoom.png) no-repeat center;
 }
 
 .product__photo{
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 .product__name{
+    color: #333333;
+    margin: 10px 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
 
+.product__description{
+    text-align: center;
+    color: #bdbcbc;
+    font-size: 14px;
+}
+
+.product__price{
+    color: #646464;
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.product__oldprice{
+    color: #848484;
+    font-size: 12px;
+    text-decoration: line-through;
+    align-self: flex-end;
+}
+
+.product__star{
+    width: 13px;
+    height: 12px;
+    background: url(img/star.png) no-repeat center;
+}
+
+.product__star_active{
+    background: url(img/star-active.png) no-repeat center;
+}
+
+.product__compare{
+    height: 25px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-left: 29px;
+    margin-right: 14px;
+    cursor: pointer;
+    color: #646464;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.product__compare input{
+    display: none;
+}
+
+.product__compare span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 25px;
+    border: 1px solid #c0c030;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+}
+
+.product__compare input:checked ~ span{
+  background-image: url(img/product__checked.png);
 }
