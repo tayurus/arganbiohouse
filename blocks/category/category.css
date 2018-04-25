@@ -1,0 +1,67 @@
+.categories{
+    display: flex;
+    margin: 40px auto;
+}
+
+.category{
+    display: block;
+    width: 386px;
+    border: 1px solid #e8e8e8;
+    padding: 65px;
+    background-color: #fff;
+}
+
+.category:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #c0c030;
+}
+
+.category__title{
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+}
+
+.category__img{
+    margin: 0px auto 20px auto;
+}
+
+.category:hover .category__img_2{
+    background: url("img/olive-oil-active.png") no-repeat center / contain;
+}
+
+.category__img_1{
+    width: 39px;
+    height: 51px;
+    background: url("img/olives.png") no-repeat center / contain;
+}
+.category__img_2{
+    width: 27px;
+    height: 53px;
+    background: url("img/olive-oil.png") no-repeat center / contain;
+}
+.category__img_3{
+    width: 35px;
+    height: 51px;
+    background: url("img/liquid.png") no-repeat center / contain;
+}
+
+@media (max-width:800px),(max-device-width:800px) {
+    .category{
+        padding: 35px;
+    }
+}
+
+@media (max-width:570px),(max-device-width:570px) {
+    .categories{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    .category{
+        width: 100%;
+        padding: 20px;
+    }
+}
