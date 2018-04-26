@@ -1,3 +1,9 @@
+.footer{
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #e8e8e8;
+}
+
 .footer__top{
     padding: 0px 15px;
 }
