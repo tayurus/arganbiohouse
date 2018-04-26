@@ -147,5 +147,16 @@
 }
 
 .product__compare input:checked ~ span{
-  background-image: url(img/product__checked.png);
+    background-image: url(img/product__checked.png);
+}
+
+.product__sort{
+    border-top: 1px solid #e8e8e8;
+    padding-top: 14px;
+    color: #646464;
+    font-size: 14px;
+}
+
+.product__sort span{
+    margin: 0 6px;
 }
