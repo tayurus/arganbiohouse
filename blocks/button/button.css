@@ -24,7 +24,18 @@
     font-size: 13px;
 }
 
-.button_buy:hover{
-    background-color: #c0c030;
+.button_buy:hover, .button_carousel:hover{
+    background: #c0c030;
     color: #ffffff;
+}
+
+.button_carousel{
+    width: 228px;
+    height: 43px;
+    background: linear-gradient(to right, #c0c030 0%, #c0c030 18%, transparent 19%, transparent 100%);
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 0px;
+    padding-left: 40px;
 }
