@@ -1,0 +1,35 @@
+.company{
+    display: block;
+    position: relative;
+    max-width: 385px;
+    min-width: 235px;
+    border: 2px solid #c0c030;
+    background-color: #ffffff;
+    margin: 4px;
+}
+
+.company__label{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #c0c030;
+    padding: 7px 17px;
+    color: #fefefe;
+    font-size: 14px;
+    z-index: 10;
+}
+
+@media(max-width: 614px), (max-device-width: 614px){
+    .company__label{
+        display: block;
+        position: relative;
+    }
+}
+
+.company__img{
+    max-width: 381px;
+    width: 100%;
+    max-height: 243px;
+    object-fit: cover;
+}

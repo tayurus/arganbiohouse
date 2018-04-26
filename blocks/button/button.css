@@ -18,6 +18,12 @@
     font-size: 14px;
 }
 
+.button_buy_catalog{
+    width: 111px;
+    border-left-width: 23px;
+    font-size: 13px;
+}
+
 .button_buy:hover{
     background-color: #c0c030;
     color: #ffffff;
