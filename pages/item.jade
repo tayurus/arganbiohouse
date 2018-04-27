@@ -16,7 +16,11 @@ html(lang="en")
                 li
                     a.breadcrumbs__item.breadcrumbs__item_active(href="#") Premium Class Аргановое масло
             
-            include ../blocks/filter/filter.jade
+            .container.d-flex.flex-column.flex-xl-row.justify-content-around
+                .col-12.col-xl-3
+                    include ../blocks/filter/filter.jade
+                .col-12.col-xl-9.justify-content-center
+                    include ../blocks/description/description.jade
             
         
         include ../blocks/footer/footer.jade
