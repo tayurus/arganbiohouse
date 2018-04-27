@@ -11,10 +11,11 @@ html(lang="en")
                     a.breadcrumbs__item(href="#") Главная
                 li
                     a.breadcrumbs__item.breadcrumbs__item_active(href="#") Косметика
-            .container.d-flex
-                .col-md-3
-                    include ../blocks/filter/filter.jade
-                .col-md-9.justify-content-center
+            .container.d-flex.flex-column.flex-xl-row.justify-content-around
+                .col-12.col-xl-3
+                    include ../blocks/filter/filter_catalog.jade
+                .col-12.col-xl-9.justify-content-center
+                    include ../blocks/company-desc/company-desc.jade
                     include ../blocks/company/company.jade
                     include ../blocks/product/catalog.jade
         

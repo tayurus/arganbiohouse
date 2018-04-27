@@ -157,6 +157,23 @@
     font-size: 14px;
 }
 
-.product__sort span{
+.product__sortitem{
+    cursor: pointer;
     margin: 0 6px;
+}
+
+.product__sortitem_active{
+    font-weight: bold;
+}
+
+.product__arrow{
+    display: inline-block;
+    width: 4px;
+    height: 12px;
+    margin-left: 4px;
+    background: url(img/product__arrow.png) no-repeat center;
+}
+
+.product__arrow_up{
+    transform: rotate(180deg);
 }
