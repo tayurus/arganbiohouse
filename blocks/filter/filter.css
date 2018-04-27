@@ -1,7 +1,14 @@
 .filter{
+    position: static;
+    position: sticky;
+    top: 20px;
     width: 254px;
     background: #ffffff;
     padding: 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 14px;
 }
 
 .filter__body{
@@ -10,11 +17,16 @@
 }
 
 .filter__name{
+    display: block;
     position: relative;
     color: #646464;
     font-size: 16px;
     font-weight: bold;
     list-style: none;
+}
+
+.filter__subcategory{
+    padding-left: 14px;
 }
 
 .filter__name_root{
@@ -38,6 +50,10 @@
     width: 14px;
     height: 14px;
     background: url(img/filter__arrow.png) no-repeat center;
-    transition: 0.3s;
-    /* transform: rotate(-90deg); */
+    transition: transform 0.3s;
+    transform: rotate(-90deg);
+}
+
+.filter__arrow-down{
+    transform: rotate(0deg);
 }
