@@ -1,28 +1,35 @@
-.description.flex-wrap.flex-md-nowrap
-    img.description__img(src="img/item__photo.png", alt="product_photo")
-    .description__body
-        .description__title Premium Class Аргановое масло 
-        .description__rating.flex-wrap.flex-md-nowrap
-            .d-flex.flex-column
-                div Рейтинг :
-                .d-flex
-                    .description__rating-value 4.53
-                    .description__rating-votes (83 голоса)
-            .description__rating-stars
-                span.description__rating-star.description__rating-star_active
-                span.description__rating-star.description__rating-star_active
-                span.description__rating-star.description__rating-star_active
-                span.description__rating-star.description__rating-star_active
-                span.description__rating-star
-            a.description__rating-vote(href="#") Проголосовать
-        .description__about БИО 50 мл 100% натуральное ( бутылка с темным стеклом ). Использование Арганового масла из Марокко идеально подходит для употребления как в начале дня - основа под макияж, так и в конце дня - для успокоения раздраженной кожи лица и шеи. 
-        div
-            span.font-weight-bold Производитель: 
-            span.description__country Морокко
-        div
-            span.font-weight-bold Наличие: 
-            span.description__available в наличии 
-        .description__price.justify-content-md-start
-            span Цена:
-            span.description__oldprice 1300 руб
-            span.description__newprice 1200 руб
+section
+    .description.flex-wrap.flex-md-nowrap
+        img.description__img(src="img/item__photo.png", alt="product_photo")
+        .description__body
+            .description__title Premium Class Аргановое масло 
+            .description__rating.flex-wrap.flex-md-nowrap
+                .d-flex.flex-column
+                    div Рейтинг :
+                    .d-flex
+                        .description__rating-value 4.53
+                        .description__rating-votes (83 голоса)
+                .description__rating-stars
+                    span.description__rating-star.description__rating-star_active
+                    span.description__rating-star.description__rating-star_active
+                    span.description__rating-star.description__rating-star_active
+                    span.description__rating-star
+                    span.description__rating-star
+                a.description__rating-vote(href="#") Проголосовать
+            .description__about БИО 50 мл 100% натуральное ( бутылка с темным стеклом ). Использование Арганового масла из Марокко идеально подходит для употребления как в начале дня - основа под макияж, так и в конце дня - для успокоения раздраженной кожи лица и шеи. 
+            div
+                span.font-weight-bold Производитель: 
+                span.description__country Морокко
+            div
+                span.font-weight-bold Наличие: 
+                span.description__available в наличии 
+            .description__price.justify-content-md-start
+                span Цена:
+                span.description__oldprice 1300 руб
+                span.description__newprice 1200 руб
+            form.d-flex.align-items-center.justify-content-between.flex-column.flex-sm-row
+                .d-flex.align-items-center.justify-content-center
+                    .description__button-arrow
+                    input.description__count(type="number", value="1", min="1", max="999")
+                    .description__button-arrow.description__button-arrow_right
+                button.button.button_big В корзину

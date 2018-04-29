@@ -18,13 +18,45 @@
     font-size: 14px;
 }
 
+.button_big{
+    width: 279px;
+    height: 43px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #c0c030;
+    border-left-width: 43px;
+    background-color: #ffffff;
+    color: #c0c030;
+    font-size: 18px;
+}
+
+.button_small{
+    width: 96px;
+    height: 23px;
+    border-left-width: 23px;
+    font-size: 11px;
+}
+
+.button_big-feedback{
+    width: 167px;
+    margin: 7px 30px;
+}
+
+@media(max-width: 400px), (max-device-width: 400px){
+    .button_buy-big{
+        width: 230px;
+    }
+}
+
 .button_buy_catalog{
     width: 111px;
     border-left-width: 23px;
     font-size: 13px;
 }
 
-.button_buy:hover, .button_carousel:hover{
+.button_buy:hover,
+.button_carousel:hover,
+.button_big:hover{
     background: #c0c030;
     color: #ffffff;
 }
