@@ -196,3 +196,18 @@ a{
         width: inherit;
     }
 }
+
+.subtitle{
+    font-size: 18px;
+    color: #646464;
+    margin-top:18px;
+}
+
+.subtitle_green{
+    color: #c0c030;
+}
+
+#toDescription,
+#toFeedback{
+    cursor: pointer;
+}

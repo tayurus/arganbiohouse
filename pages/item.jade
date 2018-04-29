@@ -2,6 +2,7 @@ doctype html
 html(lang="en")
     include ../blocks/head/head.jade
     body.text-center.text-md-left
+        script(src="https://www.google.com/recaptcha/api.js")
         include ../blocks/header/header.jade
             
         main
@@ -21,6 +22,13 @@ html(lang="en")
                     include ../blocks/filter/filter.jade
                 .col-12.col-xl-9.justify-content-center
                     include ../blocks/description/description.jade
-            
+                    h2
+                        span.subtitle#toDescription Описание
+                        span.subtitle  / 
+                        span.subtitle.subtitle_green#toFeedback Отзывы
+                    include ../blocks/feedback/feedback.jade
+                    include ../blocks/full-description/full-description.jade
+                    include ../blocks/recommend-carousel/recommend-carousel.jade
+                    
         
         include ../blocks/footer/footer.jade
