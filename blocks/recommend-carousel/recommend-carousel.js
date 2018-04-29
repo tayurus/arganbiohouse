@@ -11,4 +11,3 @@ $(".recommend-carousel").owlCarousel({
         }
     }
 })
-<>
