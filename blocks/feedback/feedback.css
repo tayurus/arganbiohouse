@@ -1,0 +1,81 @@
+
+
+.feedback{
+    color: #646464;
+    font-size: 12px;
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 20px 13px;
+}
+
+.feedback__date{
+    opacity: 0.7;
+}
+
+.feedback__text{
+    margin-top: 10px;
+}
+
+@media(max-width: 768px), (max-device-width: 768px){
+    .feedback{
+        padding: 6px 0;
+    }
+    .feedback__text{
+        text-align: justify;
+    }
+}
+
+.feedback__pagination{
+    margin: 10px 0;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+.feedback__pages{
+    margin-left: 22px;
+    margin-right: 22px;
+    font-size: 12px;
+}
+
+.feedback__pages-item{
+    margin: 5px;
+}
+
+.feedback__pages-item_active{
+    font-weight: 700;
+}
+
+.feedback__pagination-button{
+    width: 6px;
+    height: 9px;
+    background: url(img/feedback__arrow.png) no-repeat center;
+}
+
+.feedback__pagination-button_right{
+    transform: rotate(180deg);
+}
+
+.feedback__form *{
+    max-width: 100%;
+}
+
+.feedback__form-name{
+    width: 280px;
+    height: 44px;
+}
+
+
+.feedback__form-text{
+    height: 156px;
+}
+
+.feedback__form-name,
+.feedback__form-text{
+    padding: 15px;
+    border: 1px solid #e8e8e8;  
+    color: #bdbcbc;
+    font-size: 12px;
+    font-family: "Century Gothic";
+    margin-bottom: 7px;
+}

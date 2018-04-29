@@ -1,0 +1,25 @@
+section.feedback__section
+    .d-flex.flex-column
+        .feedback
+            .feedback__date 10.04.2018 
+            .feedback__text Добрый день, заказала эо масло и была в полном вгосторге! Буду советовать всем своим друзьям.  Это чистое масло без добааок
+        .feedback
+                .feedback__date 10.04.2018 
+                .feedback__text Добрый день, заказала эо масло и была в полном вгосторге! Буду советовать всем своим друзьям.  Это чистое масло без добааок
+        .feedback
+                .feedback__date 10.04.2018 
+                .feedback__text Добрый день, заказала эо масло и была в полном вгосторге! Буду советовать всем своим друзьям.  Это чистое масло без добааок
+        .feedback__pagination
+            a.feedback__pagination-button(href="#")
+            .feedback__pages
+                a.feedback__pages-item(href="#") 1
+                a.feedback__pages-item.feedback__pages-item_active(href="#") 2
+                a.feedback__pages-item(href="#") 3
+            a.feedback__pagination-button.feedback__pagination-button_right(href="#")
+        form.feedback__form.d-flex.flex-column.align-items-center.align-items-sm-start(action="")
+            h2.subtitle Оставить отзыв
+            input.feedback__form-name(type="text", placeholder="Имя" name="name")
+            textarea.feedback__form-text.w-100(name="feedback")
+            .d-flex.flex-column.flex-md-row.align-items-center.justify-content-start.w-100
+                .g-recaptcha(data-sitekey="123")
+                button.button.button_big.button_big-feedback Отправить
