@@ -8,22 +8,11 @@
     flex-direction: column;
 }
 
-.product_catalog{
-    width: 241px;
-    border: 2px solid #c0c030;
-    font-size: 15px;
-    margin: 8px auto;
-}
+
 
 .product__visual{
     width: 262px;
     height: 262px;
-    position: relative;
-}
-
-.product__visual_catalog{
-    width: 237px;
-    height: 237px;
     position: relative;
 }
 
@@ -46,11 +35,6 @@
     background-image: url(img/product__label.png);
 }
 
-.product__label_catalog{
-    max-width: 237px;
-    max-height: 237px;
-}
-
 .product__label:hover{
     color: transparent;
     background: rgba(0,0,0,0.5) url(img/product__zoom.png) no-repeat center;
@@ -64,6 +48,7 @@
 }
 
 .product__name{
+    display: block;
     color: #333333;
     margin: 10px 14px;
     padding-bottom: 6px;
@@ -77,10 +62,6 @@
     font-size: 14px;
 }
 
-.product__description_catalog{
-    font-size: 13px;
-}
-
 .product__price{
     color: #646464;
     font-weight: bold;
@@ -92,10 +73,6 @@
     font-size: 12px;
     text-decoration: line-through;
     align-self: flex-end;
-}
-
-.product__oldprice_catalog{
-    font-size: 12px;
 }
 
 .product__star{
@@ -124,10 +101,6 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-.product__compare_catalog{
-    margin-right: 2px;
 }
 
 .product__compare input{
@@ -176,4 +149,72 @@
 
 .product__arrow_up{
     transform: rotate(180deg);
+}
+
+.product_catalog{
+    width: 241px;
+    border: 2px solid #c0c030;
+    font-size: 15px;
+    margin: 8px auto;
+}
+
+.product_catalog .product__visual{
+    width: 237px;
+    height: 237px;
+    position: relative;
+}
+
+.product_catalog .product__label{
+    max-width: 237px;
+    max-height: 237px;
+}
+
+.product_catalog .product__description{
+    font-size: 13px;
+}
+
+.product_catalog .product__oldprice{
+    font-size: 12px;
+}
+
+.product_catalog .product__compare{
+    margin-right: 2px;
+}
+
+.product_recommend{
+    width: 207px;
+    border: 2px solid #e8e8e8;
+    font-size: 12px;
+    margin: 8px auto;
+}
+
+.product_recommend .product__visual{
+    width: 203px;
+    height: 203px;
+    position: relative;
+}
+
+.product_recommend .product__label{
+    max-width: 203px;
+    max-height: 203px;
+    padding-left: 1px;
+}
+
+.product_recommend .product__description{
+    font-size: 11px;
+}
+
+.product_recommend .product__oldprice{
+    font-size: 10px;
+}
+
+.product_recommend .product__compare{
+    font-size: 11px;
+    margin-right: 2px;
+}
+
+.product_recommend .product__compare span{
+    top: 1px;
+    width: 21px;
+    height: 23px;
 }
