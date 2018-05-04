@@ -128,6 +128,7 @@
     padding-top: 14px;
     color: #646464;
     font-size: 14px;
+    user-select: none;
 }
 
 .product__sortitem{
@@ -155,7 +156,7 @@
     width: 241px;
     border: 2px solid #c0c030;
     font-size: 15px;
-    margin: 8px auto;
+    margin: 88px auto 36px;
 }
 
 .product_catalog .product__visual{

@@ -1,7 +1,7 @@
-$(".filter__arrow").click(function () {
-    let subcat = $(this).parent().next();
+$(".filter__name_root").click(function () {
+    let subcat = $(this).next();
     if($(subcat).hasClass("filter__subcategory")){
         $(subcat).slideToggle(300);
-        $(this).toggleClass("filter__arrow-down");
+        $(this).children(".filter__arrow").toggleClass("filter__arrow-down");
     }
 });
