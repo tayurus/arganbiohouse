@@ -18,6 +18,7 @@
 }
 
 .category__title{
+  font-size: 20px;
     text-align: center;
     text-decoration: none;
     display:inline-block;

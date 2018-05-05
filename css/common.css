@@ -34,7 +34,7 @@ a{
     position: relative;
     padding-left: 26px;
 }
- .telephone-icon{
+.telephone-icon{
     position: relative;
 }
 .mail-icon{
@@ -170,8 +170,8 @@ a{
 
 .basket-counter{
     position: absolute;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
