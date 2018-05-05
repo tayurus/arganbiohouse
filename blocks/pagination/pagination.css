@@ -1,0 +1,30 @@
+.pagination{
+    margin: 10px 0;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+.pagination__pages{
+    margin-left: 22px;
+    margin-right: 22px;
+    font-size: 12px;
+}
+
+.pagination__pages-item{
+    margin: 5px;
+}
+
+.pagination__pages-item_active{
+    font-weight: 700;
+}
+
+.pagination__button{
+    width: 6px;
+    height: 9px;
+    background: url(img/feedback__arrow.png) no-repeat center;
+}
+
+.pagination__button_right{
+    transform: rotate(180deg);
+}

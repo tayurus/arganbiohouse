@@ -9,13 +9,7 @@ section.feedback__section
         .feedback
                 .feedback__date 10.04.2018 
                 .feedback__text Добрый день, заказала эо масло и была в полном вгосторге! Буду советовать всем своим друзьям.  Это чистое масло без добааок
-        .feedback__pagination
-            a.feedback__pagination-button(href="#")
-            .feedback__pages
-                a.feedback__pages-item(href="#") 1
-                a.feedback__pages-item.feedback__pages-item_active(href="#") 2
-                a.feedback__pages-item(href="#") 3
-            a.feedback__pagination-button.feedback__pagination-button_right(href="#")
+        include ../pagination/pagination.jade
         form.feedback__form.d-flex.flex-column.align-items-center.align-items-sm-start(action="")
             h2.subtitle Оставить отзыв
             input.feedback__form-name(type="text", placeholder="Имя" name="name")

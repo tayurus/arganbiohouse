@@ -25,37 +25,6 @@
     }
 }
 
-.feedback__pagination{
-    margin: 10px 0;
-    align-self: flex-end;
-    display: flex;
-    align-items: center;
-}
-
-.feedback__pages{
-    margin-left: 22px;
-    margin-right: 22px;
-    font-size: 12px;
-}
-
-.feedback__pages-item{
-    margin: 5px;
-}
-
-.feedback__pages-item_active{
-    font-weight: 700;
-}
-
-.feedback__pagination-button{
-    width: 6px;
-    height: 9px;
-    background: url(img/feedback__arrow.png) no-repeat center;
-}
-
-.feedback__pagination-button_right{
-    transform: rotate(180deg);
-}
-
 .feedback__form *{
     max-width: 100%;
 }
